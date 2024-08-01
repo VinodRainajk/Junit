@@ -49,7 +49,7 @@ public class DemoUtils {
 
     public String throwException(int a) throws Exception {
         if (a < 0) {
-            throw new Exception("Value should be greater than or equal to 0");
+            throw new RuntimeException("Value should be greater than or equal to 0");
         }
         return "Value is greater than or equal to 0";
     }
@@ -59,5 +59,8 @@ public class DemoUtils {
         Thread.sleep(2000);
         System.out.println("Sleeping over");
     }
+
+
+
 
 }
